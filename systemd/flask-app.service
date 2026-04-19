@@ -1,0 +1,13 @@
+[Unit]
+Description=Flask application served by uWSGI
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/opt/flask-nginx-deployment
+ExecStart=/usr/local/bin/uwsgi --ini /opt/flask-nginx-deployment/uwsgi/app.ini
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
