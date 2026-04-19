@@ -50,3 +50,15 @@ This repository is based on a real deployment approach adapted into a public exa
 AI tools (ChatGPT) were used for idea exploration, debugging, and documentation support. The final setup pattern was tested and adjusted manually in a real environment.
 
 Sensitive information such as real domains, IP addresses, file paths, and credentials has been removed from this public version.
+
+## Integration Flow
+
+The deployment model works as follows:
+
+1. the Flask application provides the web routes
+2. uWSGI runs the application as a long-lived service
+3. systemd manages the uWSGI process
+4. Nginx acts as a reverse proxy in front of the application
+5. incoming requests are passed from Nginx to the uWSGI socket
+
+This creates a more production-oriented setup than running the Flask development server directly.
