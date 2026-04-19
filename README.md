@@ -62,3 +62,11 @@ The deployment model works as follows:
 5. incoming requests are passed from Nginx to the uWSGI socket
 
 This creates a more production-oriented setup than running the Flask development server directly.
+
+## Repository Structure
+
+- `app/` – minimal Flask application and Python requirements
+- `uwsgi/` – uWSGI configuration
+- `nginx/` – example Nginx reverse proxy configuration
+- `systemd/` – example service definition
+- `docs/` – project notes and documentation
