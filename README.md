@@ -70,3 +70,13 @@ This creates a more production-oriented setup than running the Flask development
 - `nginx/` – example Nginx reverse proxy configuration
 - `systemd/` – example service definition
 - `docs/` – project notes and documentation
+
+## Next Steps
+
+Possible future improvements:
+
+- environment variable support
+- static file handling examples
+- HTTPS/TLS deployment notes
+- example multi-app Nginx routing
+- containerized deployment alternative
