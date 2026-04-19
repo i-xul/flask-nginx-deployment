@@ -1,2 +1,52 @@
 # flask-nginx-deployment
-Example Flask application deployment using Nginx, uWSGI, and a self-hosted Linux server setup
+
+Example Flask application deployment using Nginx, uWSGI, and a self-hosted Linux server setup.
+
+## Overview
+
+This repository documents a practical deployment model for a Flask web application running behind Nginx on a self-hosted Linux server.
+
+The goal of the project is to demonstrate how a lightweight Python web application can be served in a more production-oriented way using a WSGI server and reverse proxy instead of Flask's built-in development server.
+
+## Current Scope
+
+This repository includes:
+
+* a minimal example Flask application
+* uWSGI configuration for serving the app
+* Nginx configuration for reverse proxying
+* systemd service example for process management
+* documentation for a simple self-hosted deployment workflow
+
+## Features
+
+* Flask application example
+* Nginx reverse proxy setup
+* uWSGI application serving
+* systemd service management
+* practical self-hosted deployment structure
+* public portfolio version of a real deployment model
+
+## Goals
+
+* document a repeatable Flask deployment workflow
+* show how application and infrastructure pieces connect together
+* demonstrate a practical self-hosting stack
+* create a reusable deployment example for future projects
+* publish a sanitized version of a real-world setup
+
+## Environment
+
+* Linux server
+* Python / Flask
+* uWSGI
+* Nginx
+* systemd
+
+## Notes
+
+This repository is based on a real deployment approach adapted into a public example.
+
+AI tools (ChatGPT) were used for idea exploration, debugging, and documentation support. The final setup pattern was tested and adjusted manually in a real environment.
+
+Sensitive information such as real domains, IP addresses, file paths, and credentials has been removed from this public version.
